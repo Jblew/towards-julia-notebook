@@ -1,5 +1,5 @@
 using Pkg
-Pkg.activate(".")
+Pkg.activate("TowardsNotebook")
 Pkg.instantiate()
 
 import TowardsNotebook

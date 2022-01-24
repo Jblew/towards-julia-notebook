@@ -10,4 +10,4 @@ TAG="1.0.0"
 FULL_TAG="${GCP_LOCATION}-docker.pkg.dev/${PROJECT_ID}/${ARTIFACT_REPOSITORY_NAME}/${ARTIFACT_NAME}:${TAG}"
 
 gcloud config set project $PROJECT_ID
-gcloud builds submit --machine-type $MACHINE_TYPE --tag "${FULL_TAG}"
+gcloud builds submit . --machine-type $MACHINE_TYPE --tag "${FULL_TAG}" --timeout 30m
