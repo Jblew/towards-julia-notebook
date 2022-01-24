@@ -6,7 +6,5 @@ Challenge:
 
 Examples:
 1. Plain julia example
-2. With module
-3. With module that exports single function which is imported and run
-4. With above module that is precompiled 
-5. With above module that is compiled to .so with PackageCompiler
+2. With module that exports single function which is imported and run that is precompiled 
+3. With above module that is compiled to .so with PackageCompiler
