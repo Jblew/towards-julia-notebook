@@ -2,5 +2,7 @@
 	"folders": [
 		{ "path": ".." }
 	],
-	"settings": {}
+	"settings": {
+		"julia.environmentPath": "/Users/jedrzejlewandowski/git-repository/towards-julia-notebook/EnvBaker"
+	}
 }
