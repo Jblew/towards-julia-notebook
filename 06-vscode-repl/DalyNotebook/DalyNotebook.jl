@@ -10,7 +10,7 @@ end
 function save_plot(plot; file::String, desc::String)
     mkpath(".fig")
     savefig(plot, ".fig/$(file)")
-    plot_img_str = "\n![$desc](.fig/$(file))]\n"
+    plot_img_str = "\n![$desc](.fig/$(file))\n"
     global output *= plot_img_str
 end
 
@@ -101,6 +101,5 @@ save_plot(plot_daly_choroba, file = "daly-choroba.svg", desc = "A figure")
 
 
 
-print(output)
-
+open(f -> write(f, output), "index.md", "w+")
 end # module
