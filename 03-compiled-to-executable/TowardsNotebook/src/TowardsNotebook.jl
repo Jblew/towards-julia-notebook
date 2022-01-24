@@ -33,4 +33,9 @@ function notebook()
     """
 end
 
+function julia_main()::Cint
+    notebook()
+    return 0 # if things finished successfully
+end
+
 end # module
